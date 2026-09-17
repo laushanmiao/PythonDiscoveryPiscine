@@ -1,0 +1,10 @@
+#!/usr/bin/env python3
+
+import sys
+
+if len(sys.argv)>1:
+    print(f"parameters: {len(sys.argv)-1}")
+    for x in sys.argv[1:]:
+        print(f"{x}: {len(x)}")
+else:
+    print('none')
