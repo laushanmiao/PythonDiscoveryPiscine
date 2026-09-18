@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
 
-class Births:
-    def famous_births(dictionary):
-        for shortname, data in dictionary.items():
-            wholename = data['name']
-            date = data['date_of_birth']
-            print(f"{wholename} is a great scientist born in {date}")
+class Person:
+    def famous_births(birthday_dict):
+        for scientist in birthday_dict.values():
+            name = scientist['name']
+            date = scientist['date_of_birth']
+            print(f"{name} is a great scientist born in {date}.")
 
-famous_births = Births.famous_births
+famous_births = Person.famous_births
 
 women_scientists = {
         'ada':{'name':'Ada Lovelace','date_of_birth':"1815"},

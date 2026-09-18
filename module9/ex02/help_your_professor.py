@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 
-def average(marksdict):
-    averagemark = sum(marksdict.values())/len(marksdict)
-    return(averagemark)
+class Marks:
+    def average(marksdict):
+        averagemark = sum(marksdict.values())/len(marksdict)
+        return(averagemark)
+
+average = Marks.average
 
 class_3B = {
         'marine':18,
